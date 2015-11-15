@@ -27,7 +27,7 @@ public class FindFile {
 				if (templist[i].isFile() && templist[i].getName().toLowerCase().endsWith("jpg")) {
 					j2w.jpg2webP(templist[i]);
 				}
-				if (templist[i].isDirectory()) {//test
+				if (templist[i].isDirectory()) {//
 					findfile(templist[i].getAbsolutePath());
 				}
 			}
