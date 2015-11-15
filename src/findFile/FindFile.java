@@ -4,10 +4,11 @@ import java.io.File;
 
 import jpg2webp.Jpg2webP;
 
+
 public class FindFile {
 	public static void main(String args[]) {
 		Jpg2webP j2w = new Jpg2webP();
-		findfile("C:\\Users\\Administrator\\Downloads\\Compressed\\IMG_0073.JPG");
+		findfile("");
 	}
 
 	/**
@@ -26,7 +27,7 @@ public class FindFile {
 				if (templist[i].isFile() && templist[i].getName().toLowerCase().endsWith("jpg")) {
 					j2w.jpg2webP(templist[i]);
 				}
-				if (templist[i].isDirectory()) {
+				if (templist[i].isDirectory()) {//test
 					findfile(templist[i].getAbsolutePath());
 				}
 			}
