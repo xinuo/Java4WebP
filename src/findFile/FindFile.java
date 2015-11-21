@@ -1,14 +1,23 @@
 package findFile;
 
 import java.io.File;
+import java.net.MalformedURLException;
+
+import jcifs.smb.SmbFile;
 
 import jpg2webp.Jpg2webP;
 
 
 public class FindFile {
 	public static void main(String args[]) {
-		Jpg2webP j2w = new Jpg2webP();
-		findfile("");
+/*		SmbFile file;
+		try {
+			file = new SmbFile("smb://NAS//e//Picture//x!ng//DCIM//100SHARP");
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		findfile("F:\\x!ng\\picture");
 	}
 
 	/**
@@ -33,5 +42,4 @@ public class FindFile {
 			}
 		}
 	}
-
 }
